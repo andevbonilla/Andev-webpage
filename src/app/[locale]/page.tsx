@@ -39,6 +39,7 @@ import {
   AwsSVG,
   Css3SVG,
   Html5SVG,
+  JavaScriptSVG,
   MongoDBSVG,
   NextJsSVG,
   NodejsSVG,
@@ -261,6 +262,19 @@ export default function Home() {
 
               <ProjectsGrid
                 projects={[
+                  {
+                    name: "NinjaPrompt",
+                    desc: projectsI18n("ninjaPromptDesc"),
+                    link: "https://chromewebstore.google.com/detail/ninjaprompt/pgdjmcokonbeadgpcfdhoecnkjdgaeol",
+                    github: "https://github.com/andevbonilla/NinjaPrompt",
+                    imgUrl: "ninjaprompt-interface.webp",
+                    buttonText: projectsI18n("viewButton"),
+                    iconList: [
+                      <JavaScriptSVG className="w-[3rem]" key="javascript" />,
+                      <Html5SVG className="w-[3rem]" key="html5" />,
+                      <Css3SVG className="w-[3rem]" key="css3" />,
+                    ],
+                  },
                   {
                     name: "Virtual Board",
                     desc: projectsI18n("virtualBoardDesc"),

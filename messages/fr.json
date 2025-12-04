@@ -36,6 +36,7 @@
   "My-Projects": {
     "title": "MES PROJETS",
     "subtitle": "Ce sont des projets à but non lucratif que j'ai construits pour m'améliorer en tant que programmeur ou pour créer des outils utiles.",
+    "ninjaPromptDesc": "Enregistrez, recherchez et utilisez instantanément vos prompts IA préférés. Ne perdez plus de temps à écrire les mêmes prompts encore et encore. Dans NinjaPrompt, vous pouvez enregistrer les prompts que vous utilisez le plus, et d'un simple clic, votre IA préférée s'ouvrira et le prompt sera collé automatiquement dans la zone de message.",
     "yourDreamCarDesc": "YourDreamCar est une page web que j'ai conçue pour une entreprise que j'ai développée avec mon meilleur ami David. Elle propose des services d'emballage, de teintage des fenêtres et plus encore. #YourDreamCar",
     "fansiveDesc": "Fansive est une start-up que j'ai créée, qui est une plateforme de contenu exclusif. Cette application offre tous les outils nécessaires aux créateurs de contenu pour proposer le meilleur contenu à leurs abonnés, comme le streaming en direct, les stories, les chats de groupe, les chats privés, les publications, le stockage de fichiers et bien plus encore.",
     "virtualBoardDesc": "Virtual Board est une application web créée sans utiliser de bibliothèques, qui simule un tableau de classe, vous permettant de dessiner, effacer, créer des formes, déplacer et déposer, faire pivoter et bien d'autres choses encore. Cette application utilise la trigonométrie et l'algèbre pour résoudre certaines fonctionnalités sur le tableau virtuel.",

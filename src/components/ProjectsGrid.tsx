@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Anton } from "next/font/google";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const anton = Anton({
   weight: ["400"],
@@ -78,14 +80,25 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
                       ))}
                     </div>
 
-                    {/* View More Button (GitHub) */}
-                    <Link 
-                      href={project.github} 
-                      target="_blank"
-                      className="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full hover:bg-yellow-300 transition-all transform translate-y-4 group-hover:translate-y-0 duration-300 delay-150"
-                    >
-                      {project.buttonText || "Ver más"}
-                    </Link>
+                    {/* Actions */}
+                    <div className="flex gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-150 items-center">
+                      <Link 
+                        href={project.link} 
+                        target="_blank"
+                        className="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full hover:bg-yellow-300 transition-all"
+                      >
+                        {project.buttonText || "Ver más"}
+                      </Link>
+
+                      <Link 
+                        href={project.github} 
+                        target="_blank"
+                        className="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition-all flex justify-center items-center border border-white/20"
+                        aria-label="View on GitHub"
+                      >
+                        <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ) : (

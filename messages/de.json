@@ -36,6 +36,7 @@
   "My-Projects": {
     "title": "MEINE PROJEKTE",
     "subtitle": "Dies sind gemeinnützige Projekte, die ich erstellt habe, um mich als Programmierer zu verbessern oder nützliche Werkzeuge zu schaffen.",
+    "ninjaPromptDesc": "Speichern, suchen und verwenden Sie sofort Ihre bevorzugten KI-Prompts. Verschwenden Sie keine Zeit mehr damit, immer wieder dieselben Prompts zu schreiben. In NinjaPrompt können Sie die Prompts speichern, die Sie am häufigsten verwenden, und mit einem einzigen Klick öffnet sich Ihre bevorzugte KI und der Prompt wird automatisch in das Nachrichtenfeld eingefügt.",
     "yourDreamCarDesc": "YourDreamCar ist eine Webseite, die ich für ein Unternehmen entworfen habe, das ich mit meinem besten Freund David entwickelt habe. Es bietet Verpackungsdienste, Fenstertönung und mehr an. #YourDreamCar",
     "fansiveDesc": "Fansive ist ein von mir gegründetes Startup, das eine Plattform für exklusive Inhalte bietet. Diese App verfügt über alle notwendigen Tools für Content-Ersteller, um ihren Abonnenten den besten Inhalt anzubieten, wie Live-Streaming, Geschichten, Gruppen-Chats, private Chats, Posts, Dateispeicherung und vieles mehr.",
     "virtualBoardDesc": "Virtual Board ist eine Webanwendung, die ohne die Verwendung von Bibliotheken erstellt wurde und eine Klassenzimmer-Tafel simuliert, auf der Sie zeichnen, löschen, Figuren erstellen, ziehen und ablegen, drehen und vieles mehr können. Diese App verwendet Trigonometrie und Algebra, um einige der Funktionen auf der virtuellen Tafel zu lösen.",
