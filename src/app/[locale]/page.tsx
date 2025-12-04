@@ -49,9 +49,6 @@ import {
 // Assets (imports estáticos)
 import me from "@/assets/me.webp";
 import spaceStation from "@/assets/space-station-icon.webp";
-import cave from "@/assets/cave.webp";
-import magicarp from "@/assets/magicarp.gif";
-import tentaculos from "@/assets/tentaculos.gif";
 
 const anton = Anton({
   weight: ["400"],
