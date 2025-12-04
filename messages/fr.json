@@ -27,10 +27,7 @@
   "Curios-Facts": {
     "1": "Hauteur à laquelle la Lune orbite autour de la Terre.",
     "2": "Altitude de la Station Spatiale Internationale (ISS) dans son orbite autour de la Terre.",
-    "3": "Altitude à laquelle les premiers ballons à air chaud ont atteint au XVIIIe siècle.",
-    "4": "Profondeur maximale à laquelle les plongeurs récréatifs peuvent descendre selon les réglementations de plongée.",
-    "5": "Profondeur où commence la zone crépusculaire dans l'océan, où la lumière du soleil diminue considérablement.",
-    "6": "Profondeur approximative de l'épave du Titanic dans l'Atlantique Nord."
+    "3": "Altitude à laquelle les premiers ballons à air chaud ont atteint au XVIIIe siècle."
   },
   "UnaYMugre": {
       "title": "Ongle et saleté",
@@ -38,6 +35,7 @@
   },
   "My-Projects": {
     "title": "MES PROJETS",
+    "subtitle": "Ce sont des projets à but non lucratif que j'ai construits pour m'améliorer en tant que programmeur ou pour créer des outils utiles.",
     "yourDreamCarDesc": "YourDreamCar est une page web que j'ai conçue pour une entreprise que j'ai développée avec mon meilleur ami David. Elle propose des services d'emballage, de teintage des fenêtres et plus encore. #YourDreamCar",
     "fansiveDesc": "Fansive est une start-up que j'ai créée, qui est une plateforme de contenu exclusif. Cette application offre tous les outils nécessaires aux créateurs de contenu pour proposer le meilleur contenu à leurs abonnés, comme le streaming en direct, les stories, les chats de groupe, les chats privés, les publications, le stockage de fichiers et bien plus encore.",
     "virtualBoardDesc": "Virtual Board est une application web créée sans utiliser de bibliothèques, qui simule un tableau de classe, vous permettant de dessiner, effacer, créer des formes, déplacer et déposer, faire pivoter et bien d'autres choses encore. Cette application utilise la trigonométrie et l'algèbre pour résoudre certaines fonctionnalités sur le tableau virtuel.",

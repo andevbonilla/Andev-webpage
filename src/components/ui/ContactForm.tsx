@@ -178,7 +178,7 @@ export const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlacehol
         />
       }
 
-      <form ref={form} onSubmit={sendEmail} className={`${isLoading ? "hidden" : ""} w-full sm:px-[10%] lg:px-[20%] 2xl:px-[25%]`}>
+      <form ref={form} onSubmit={sendEmail} className={`${isLoading ? "hidden" : ""} w-full sm:px-[10%] lg:px-[20%] 2xl:px-[25%] pb-[12rem]`}>
 
         <div>
 
@@ -188,7 +188,7 @@ export const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlacehol
             name='name'
             value={name}
             onChange={(e) => evaluateName(e.target.value)}
-            className={`${(nameError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#001c5f] text-white`}
+            className={`${(nameError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#281706] text-white`}
           />
 
           {nameError && <p className='text-red-500 text-lg'>{nameError}</p>}
@@ -204,7 +204,7 @@ export const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlacehol
             name='email'
             value={email}
             onChange={(e) => evaluateEmail(e.target.value)}
-            className={`${(emailError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#001c5f] text-white`}
+            className={`${(emailError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#281706] text-white`}
           />
 
           {emailError && <p className='text-red-500 text-lg'>{emailError}</p>}
@@ -219,7 +219,7 @@ export const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlacehol
             placeholder={messagePlaceholder}
             value={message}
             onChange={(e) => evaluateMessage(e.target.value)}
-            className={`${(messageError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#001c5f] text-white`}>
+            className={`${(messageError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#281706] text-white`}>
 
           </textarea>
 

@@ -27,10 +27,7 @@
   "Curios-Facts": {
     "1": "Height at which the Moon orbits the Earth.",
     "2": "Altitude of the International Space Station (ISS) in its orbit around the Earth.",
-    "3": "Altitude at which the first hot air balloons reached in the 18th century.",
-    "4": "Maximum depth to which recreational divers can descend according to diving regulations.",
-    "5": "Depth where the twilight zone in the ocean begins, where sunlight significantly decreases.",
-    "6": "Approximate depth of the Titanic wreck in the North Atlantic."
+    "3": "Altitude at which the first hot air balloons reached in the 18th century."
   },
   "UnaYMugre": {
       "title": "Nail and Dirt",
@@ -38,6 +35,7 @@
   },
   "My-Projects": {
     "title": "MY PROJECTS",
+    "subtitle": "These are non-profit projects I built to improve as a programmer or to create useful tools.",
     "yourDreamCarDesc": "YourDreamCar is a web page that I designed for a company that I developed with my best friend David. Which offers wrapping services, window tinting and more. #YourDreamCar",
     "fansiveDesc": "Fansive is a startup created by me which is a platform for exclusive content. This app has all the necessary tools for content creators to offer the best content to their subscribers, such as live streaming, stories, group chats, private chats, post, file storage and much more.",
     "virtualBoardDesc": "Virtual Board is a web application made without using libraries that simulates a classroom board, so you can draw, erase, create figures, drag and drop, rotate and many other things. This app use trigonometry and algebra to solve some of the functionalities in the virtual board.",

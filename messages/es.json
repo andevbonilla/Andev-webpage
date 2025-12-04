@@ -27,10 +27,7 @@
   "Curios-Facts": {
     "1": "Altura a la que se encuentra la Luna orbitando la Tierra.",
     "2": "La altitud de la Estación Espacial Internacional (ISS) en su órbita alrededor de la Tierra.",
-    "3": "La altitud a la que los primeros globos aerostáticos alcanzaron en el siglo XVIII.",
-    "4": "Profundidad máxima a la que los buceadores recreativos pueden sumergirse según las normas de buceo.",
-    "5": "La profundidad donde comienza la zona de penumbra en el océano, donde la luz solar disminuye significativamente.",
-    "6": "Profundidad aproximada del naufragio del Titanic en el Atlántico Norte."
+    "3": "La altitud a la que los primeros globos aerostáticos alcanzaron en el siglo XVIII."
   },
   "UnaYMugre": {
     "title": "Uña y Mugre",
@@ -38,6 +35,7 @@
   },
   "My-Projects": {
     "title": "MIS PROYECTOS",
+    "subtitle": "Estos son proyectos sin ánimo de lucro que construí para mejorar como programador o para crear herramientas útiles.",
     "yourDreamCarDesc": "YourDreamCar es una página web que diseñé para una empresa que desarrollé con mi mejor amigo David. Ofrece servicios de envoltura, tintado de ventanas y más. #YourDreamCar",
     "fansiveDesc": "Fansive es una startup creada por mí que es una plataforma de contenido exclusivo. Esta aplicación tiene todas las herramientas necesarias para que los creadores de contenido ofrezcan el mejor contenido a sus suscriptores, como transmisiones en vivo, historias, chats grupales, chats privados, publicaciones, almacenamiento de archivos y mucho más.",
     "virtualBoardDesc": "Virtual Board es una aplicación web hecha sin utilizar bibliotecas que simula una pizarra de aula, para que puedas dibujar, borrar, crear figuras, arrastrar y soltar, rotar y muchas otras cosas. Esta aplicación utiliza trigonometría y álgebra para resolver algunas de las funcionalidades en el tablero virtual.",

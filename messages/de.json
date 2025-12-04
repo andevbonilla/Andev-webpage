@@ -27,10 +27,7 @@
   "Curios-Facts": {
     "1": "Höhe, in der der Mond die Erde umkreist.",
     "2": "Höhe der Internationalen Raumstation (ISS) in ihrer Umlaufbahn um die Erde.",
-    "3": "Höhe, die die ersten Heißluftballons im 18. Jahrhundert erreichten.",
-    "4": "Maximale Tiefe, in die Freizeittaucher laut Tauchvorschriften eintauchen können.",
-    "5": "Tiefe, in der die Dämmerungszone im Ozean beginnt, in der das Sonnenlicht erheblich abnimmt.",
-    "6": "Ungefähre Tiefe des Titanic-Wracks im Nordatlantik."
+    "3": "Höhe, die die ersten Heißluftballons im 18. Jahrhundert erreichten."
   },
   "UnaYMugre": {
       "title": "Nagel und Dreck",
@@ -38,6 +35,7 @@
   },
   "My-Projects": {
     "title": "MEINE PROJEKTE",
+    "subtitle": "Dies sind gemeinnützige Projekte, die ich erstellt habe, um mich als Programmierer zu verbessern oder nützliche Werkzeuge zu schaffen.",
     "yourDreamCarDesc": "YourDreamCar ist eine Webseite, die ich für ein Unternehmen entworfen habe, das ich mit meinem besten Freund David entwickelt habe. Es bietet Verpackungsdienste, Fenstertönung und mehr an. #YourDreamCar",
     "fansiveDesc": "Fansive ist ein von mir gegründetes Startup, das eine Plattform für exklusive Inhalte bietet. Diese App verfügt über alle notwendigen Tools für Content-Ersteller, um ihren Abonnenten den besten Inhalt anzubieten, wie Live-Streaming, Geschichten, Gruppen-Chats, private Chats, Posts, Dateispeicherung und vieles mehr.",
     "virtualBoardDesc": "Virtual Board ist eine Webanwendung, die ohne die Verwendung von Bibliotheken erstellt wurde und eine Klassenzimmer-Tafel simuliert, auf der Sie zeichnen, löschen, Figuren erstellen, ziehen und ablegen, drehen und vieles mehr können. Diese App verwendet Trigonometrie und Algebra, um einige der Funktionen auf der virtuellen Tafel zu lösen.",

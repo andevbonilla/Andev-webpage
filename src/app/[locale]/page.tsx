@@ -11,7 +11,7 @@ import { Anton } from "next/font/google";
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faTiktok, faYoutube, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 // UI Components
 import { BussinessCard } from "@/components/ui/BussinessCard";
@@ -19,7 +19,7 @@ import { ContactForm } from "@/components/ui/ContactForm";
 import { CuriosFact } from "@/components/CuriosFact";
 import { Footer } from "@/components/ui/Footer";
 import { Navbar } from "@/components/ui/Navbar";
-import { Project } from "@/components/ui/Project";
+import { ProjectsGrid } from "@/components/ProjectsGrid";
 import { TitleSection } from "@/components/ui/TitleSection";
 
 // Feature Components
@@ -91,18 +91,46 @@ export default function Home() {
             <div className="h-16" />
 
             {/* presentation section */}
-            <div className="lg:flex-row flex flex-col justify-between items-start h-[84vh] px-[15%]">
+            <div className="lg:flex-row flex flex-col-reverse lg:flex lg:justify-between items-center lg:items-start h-[84vh] px-[15%]">
               {/* Bloque de texto unificado (un solo H1) */}
-              <div className="flex flex-col justify-end lg:h-[90%]">
+              <div className="flex flex-col justify-center lg:justify-end items-center lg:items-start lg:h-[90%] w-full lg:w-auto text-center lg:text-left mt-8 lg:mt-0">
                 <p className="text-white text-[1.3rem] xl:text-[1.6rem] text-opacity-80">
                   {briefDesc("desc")}
                 </p>
 
                 <h1
-                  className={`${anton.className} text-white font-bold text-[2.6rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4.1rem] xl:text-[4.5rem]`}
+                  className={`${anton.className} text-white font-bold text-[2.6rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4.1rem] xl:text-[4.5rem] leading-tight`}
                 >
                   Andres Bonilla
                 </h1>
+
+                {/* Social Media Icons */}
+                <div className="flex gap-6 mt-6 justify-center lg:justify-start">
+                  <Link
+                    href="https://www.linkedin.com/in/andevbonilla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} className="text-white text-[2rem] hover:text-gray-300 transition-colors" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/andevbonilla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} className="text-white text-[2rem] hover:text-gray-300 transition-colors" />
+                  </Link>
+                  <Link
+                    href="https://github.com/andevbonilla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <FontAwesomeIcon icon={faGithub} className="text-white text-[2rem] hover:text-gray-300 transition-colors" />
+                  </Link>
+                </div>
               </div>
 
               {/* Foto principal (LCP): import estático + priority + sizes */}
@@ -112,7 +140,7 @@ export default function Home() {
                   alt={imagesALtsI18n("andresTesla")}
                   priority
                   sizes="(min-width:1280px) 24rem, (min-width:1024px) 24rem, 20rem"
-                  className="w-[20rem] xl:w-[24rem] floating border-[1.5rem] border-white border-b-[4rem] mt-[10vh]"
+                  className="w-[20rem] xl:w-[24rem] floating border-[1.5rem] border-white border-b-[4rem] mt-[5vh] lg:mt-[10vh]"
                 />
               </div>
             </div>
@@ -230,32 +258,65 @@ export default function Home() {
             {/* my projects */}
             <section className="z-20" id="projects">
               <TitleSection text={projectsI18n("title")} />
+              <p className="text-center text-white text-opacity-90 text-lg mb-8 px-[10%]">
+                {projectsI18n("subtitle")}
+              </p>
 
-              <Project
-                name={"Virtual Board"}
-                desc={projectsI18n("virtualBoardDesc")}
-                link={"https://super-virtual-board.netlify.app/"}
-                github={"https://github.com/andevbonilla/Virtual-Board"}
-                imgUrl={"virtualboard-interface.webp"}
-                buttonText={projectsI18n("viewButton")}
-                iconList={[
-                  <ReactSVG className="w-[3rem] mr-3" key="react" />,
-                  <Html5SVG className="w-[3rem] mr-3" key="html5" />,
-                  <Css3SVG className="w-[3rem] mr-3" key="css3" />,
-                ]}
-              />
-
-              <Project
-                name={"YourDreamCar"}
-                desc={projectsI18n("yourDreamCarDesc")}
-                link={"https://your-dream-car.vercel.app/"}
-                github={"https://github.com/andevbonilla/YourDreamCar"}
-                imgUrl={"yourdreamcar-interface.webp"}
-                buttonText={projectsI18n("viewButton")}
-                iconList={[
-                  <Html5SVG className="w-[3rem] mr-3" key="html5" />,
-                  <TailwindSVG className="w-[3rem] mr-3" key="tailwind" />,
-                  <NextJsSVG className="w-[3rem] mr-3" key="nextjs" />,
+              <ProjectsGrid
+                projects={[
+                  {
+                    name: "Virtual Board",
+                    desc: projectsI18n("virtualBoardDesc"),
+                    link: "https://super-virtual-board.netlify.app/",
+                    github: "https://github.com/andevbonilla/Virtual-Board",
+                    imgUrl: "virtualboard-interface.webp",
+                    buttonText: projectsI18n("viewButton"),
+                    iconList: [
+                      <ReactSVG className="w-[3rem]" key="react" />,
+                      <Html5SVG className="w-[3rem]" key="html5" />,
+                      <Css3SVG className="w-[3rem]" key="css3" />,
+                    ],
+                  },
+                  {
+                    name: "YourDreamCar",
+                    desc: projectsI18n("yourDreamCarDesc"),
+                    link: "https://your-dream-car.vercel.app/",
+                    github: "https://github.com/andevbonilla/YourDreamCar",
+                    imgUrl: "yourdreamcar-interface.webp",
+                    buttonText: projectsI18n("viewButton"),
+                    iconList: [
+                      <Html5SVG className="w-[3rem]" key="html5" />,
+                      <TailwindSVG className="w-[3rem]" key="tailwind" />,
+                      <NextJsSVG className="w-[3rem]" key="nextjs" />,
+                    ],
+                  },
+                  {
+                    name: "Geekepedia",
+                    desc: projectsI18n("geekepediaDesc"),
+                    link: "https://andevbonilla.github.io/Geekipedia/home/Geekipedia",
+                    github: "https://github.com/andevbonilla/Geekipedia",
+                    imgUrl: "geekipedia-interface.webp",
+                    buttonText: projectsI18n("viewButton"),
+                    iconList: [
+                      <AngularSVG className="w-[3rem]" key="angular" />,
+                      <Html5SVG className="w-[3rem]" key="html5" />,
+                      <Css3SVG className="w-[3rem]" key="css3" />,
+                    ],
+                  },
+                  {
+                    name: "FileBox",
+                    desc: projectsI18n("fileBoxDesc"),
+                    link: "https://filebox.netlify.app/#/login",
+                    github: "https://github.com/andevbonilla/backend-fileBox",
+                    imgUrl: "filebox-interface.webp",
+                    buttonText: projectsI18n("viewButton"),
+                    iconList: [
+                      <AngularSVG className="w-[3rem]" key="angular" />,
+                      <MongoDBSVG className="w-[3rem]" key="mongodb" />,
+                      <AwsSVG className="w-[3rem]" key="aws" />,
+                      <NodejsSVG className="w-[3rem]" key="nodejs" />,
+                    ],
+                  },
                 ]}
               />
             </section>
@@ -266,68 +327,7 @@ export default function Home() {
           <City curiosfactText={curiosFactsI18n("3")} />
         </div>
 
-        <div className="sea overflow-hidden z-30">
-          <div className="flex w-full pt-[3rem] bg-[#002134]">
-            <Image alt="cave" src={cave} className="w-full z-20 flex absolute" />
-          </div>
-
-          {/* my projects */}
-          <section className="pt-10">
-            {/* fishes section */}
-            <div className="relative lg:mt-[30rem] mt-[20rem]">
-              <CuriosFact meters={"-40"} text={curiosFactsI18n("4")} />
-              <Image
-                height={200}
-                width={200}
-                alt="magicarp swimming"
-                unoptimized
-                sizes="200px"
-                className="xl:mr-[14rem] lg:mr-[12rem] md:mr-[8rem] absolute right-0 sm:top-[-10rem] top-[-15rem]"
-                src={magicarp}
-              />
-            </div>
-
-            <Project
-              name={"Geekepedia"}
-              desc={projectsI18n("geekepediaDesc")}
-              link={"https://andevbonilla.github.io/Geekipedia/home/Geekipedia"}
-              github={"https://github.com/andevbonilla/Geekipedia"}
-              imgUrl={"geekipedia-interface.webp"}
-              buttonText={projectsI18n("viewButton")}
-              iconList={[
-                <AngularSVG className="w-[3rem] mr-3" key="angular" />,
-                <Html5SVG className="w-[3rem] mr-3" key="html5" />,
-                <Css3SVG className="w-[3rem] mr-3" key="css3" />,
-              ]}
-            />
-
-            <CuriosFact meters={"-200"} text={curiosFactsI18n("5")} />
-
-            <Project
-              name={"FileBox"}
-              desc={projectsI18n("fileBoxDesc")}
-              link={"https://filebox.netlify.app/#/login"}
-              github={"https://github.com/andevbonilla/backend-fileBox"}
-              imgUrl={"filebox-interface.webp"}
-              buttonText={projectsI18n("viewButton")}
-              iconList={[
-                <AngularSVG className="w-[3rem] mr-3" key="angular" />,
-                <MongoDBSVG className="w-[3rem] mr-3" key="mongodb" />,
-                <AwsSVG className="w-[3rem] mr-3" key="aws" />,
-                <NodejsSVG className="w-[3rem] mr-3" key="nodejs" />,
-              ]}
-            />
-
-            <div className="flex lg:h-[10rem] h-[18rem] relative">
-              <Image
-                src={tentaculos}
-                alt="kraken tentacles"
-                unoptimized
-                className="w-[30rem] h-[30rem] rotate-[90deg] absolute left-0"
-              />
-            </div>
-          </section>
-
+        <div className="underground">
           <section className="px-[13%]" id="contact-form">
             <TitleSection text={contactI18n("title")} />
             <ContactForm
@@ -342,11 +342,8 @@ export default function Home() {
               errorGlobal={contactI18n("error")}
             />
           </section>
-
-          <CuriosFact meters={"-3.800"} text={curiosFactsI18n("6")} />
-
-          <Footer titanicAlt={imagesALtsI18n("titanic")} />
         </div>
+
       </main>
     </>
   );
