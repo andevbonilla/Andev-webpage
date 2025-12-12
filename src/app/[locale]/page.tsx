@@ -4,7 +4,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 
 // Next-intl
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 // Google font
 import { Anton } from "next/font/google";
@@ -58,6 +58,7 @@ const anton = Anton({
 });
 
 export default function Home() {
+  const locale = useLocale();
   const imagesALtsI18n = useTranslations("Image-Alts");
   const curiosFactsI18n = useTranslations("Curios-Facts");
   const briefDesc = useTranslations("Brief-Desc");
@@ -103,7 +104,7 @@ export default function Home() {
                 </h1>
 
                 {/* Social Media Icons */}
-                <div className="flex gap-6 mt-6 justify-center lg:justify-start">
+                <div className="flex gap-6 mt-6 justify-center lg:justify-start items-center">
                   <Link
                     href="https://www.linkedin.com/in/andevbonilla"
                     target="_blank"
@@ -127,6 +128,15 @@ export default function Home() {
                     aria-label="GitHub"
                   >
                     <FontAwesomeIcon icon={faGithub} className="text-white text-[2rem] hover:text-gray-300 transition-colors" />
+                  </Link>
+                  
+                  <Link
+                    href={`https://${(locale === "en") ? "" : `${locale}.`}fiverr.com/andresbonilla_1`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors ml-2"
+                  >
+                    {briefDesc("hireMe")}
                   </Link>
                 </div>
               </div>
@@ -261,6 +271,7 @@ export default function Home() {
               </p>
 
               <ProjectsGrid
+                moreProjectsText={projectsI18n("moreProjects")}
                 projects={[
                   {
                     name: "NinjaPrompt",

@@ -43,7 +43,8 @@
     "fileBoxDesc": "FileBox es una aplicación creada por mí, muy similar a Dropbox, Google Drive u otros servicios similares, en la que cualquiera puede subir archivos, descargarlos, crear carpetas y muchas otras funciones.",
     "geekepediaDesc": "Geekipedia es un blog donde puedes aprender cómo funcionan algunos de los algoritmos más famosos en informática, como BFS (Búsqueda en Anchura), QuickSort, Búsqueda Binaria y muchos más.",
     "thePokedexDesc": "The Pokedex es una aplicación con temas claros y oscuros en la que puedes encontrar y buscar información sobre todos los Pokémon existentes y puedes usarla en dispositivos Android e iOS.",
-    "viewButton": "Ver Proyecto"
+    "viewButton": "Ver Proyecto",
+    "moreProjects": "Más Proyectos"
   },
   "Contact": {
     "title": "CONTACTO",
@@ -69,6 +70,7 @@
     "movetePlanet": "Planeta de Movete"
   },
   "Brief-Desc": {
-    "desc": "Creo Empresas, Software y Contenido"
+    "desc": "Creo Empresas, Software y Contenido",
+    "hireMe": "Contrátame"
   }
 }

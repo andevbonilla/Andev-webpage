@@ -25,9 +25,10 @@ interface ProjectData {
 
 interface ProjectsGridProps {
   projects: ProjectData[];
+  moreProjectsText: string;
 }
 
-export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
+export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects, moreProjectsText }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // Ensure we have at least 6 items for the grid (PC layout)
@@ -102,12 +103,16 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
                   </div>
                 </div>
               ) : (
-                // Coming Soon Placeholder
-                <div className="w-full h-full bg-yellow-400 flex justify-center items-center border-black border-[1px]">
-                  <span className={`text-black font-bold text-2xl sm:text-3xl ${anton.className}`}>
-                    COMING SOON
+                // More Projects Placeholder
+                <Link
+                  href="https://github.com/andevbonilla?tab=repositories"
+                  target="_blank"
+                  className="w-full h-full bg-yellow-400 flex justify-center items-center border-black border-[1px] hover:bg-yellow-300 transition-colors cursor-pointer text-decoration-none"
+                >
+                  <span className={`text-black font-bold text-2xl sm:text-3xl ${anton.className} text-center`}>
+                    {moreProjectsText}
                   </span>
-                </div>
+                </Link>
               )}
             </div>
           );

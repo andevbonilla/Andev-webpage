@@ -43,7 +43,8 @@
     "fileBoxDesc": "FileBox是我创建的一个应用程序，与Dropbox、Google Drive等类似，任何人都可以上传文件、下载文件、创建文件夹等。",
     "geekepediaDesc": "Geekipedia是一个博客，您可以在这里了解计算机科学中一些最著名的算法的工作原理，例如BFS（广度优先搜索）、快速排序、二分搜索等。",
     "thePokedexDesc": "The Pokedex是一个具有浅色和深色主题的应用程序，您可以在其中找到并搜索所有现有的宝可梦信息，并且可以在Android和iOS设备上使用。",
-    "viewButton": "查看项目"
+    "viewButton": "查看项目",
+    "moreProjects": "更多项目"
   },
   "Contact": {
     "title": "联系我们",
@@ -69,6 +70,7 @@
     "movetePlanet": "穆维特的星球"
   },
   "Brief-Desc": {
-    "desc": "我创建公司、软件和内容"
+    "desc": "我创建公司、软件和内容",
+    "hireMe": "雇用我"
   }
 }
