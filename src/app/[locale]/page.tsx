@@ -17,7 +17,6 @@ import { faInstagram, faTiktok, faYoutube, faLinkedin, faGithub } from "@fortawe
 import { BussinessCard } from "@/components/ui/BussinessCard";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { CuriosFact } from "@/components/CuriosFact";
-import { Footer } from "@/components/ui/Footer";
 import { Navbar } from "@/components/ui/Navbar";
 import { ProjectsGrid } from "@/components/ProjectsGrid";
 import { TitleSection } from "@/components/ui/TitleSection";
@@ -48,7 +47,7 @@ import {
 } from "@/utils/IconsSvgs";
 
 // Assets (imports estáticos)
-import me from "@/assets/me.webp";
+import me from "@/assets/andresbonilla1.JPG";
 import spaceStation from "@/assets/space-station-icon.webp";
 
 const anton = Anton({
@@ -129,7 +128,7 @@ export default function Home() {
                   >
                     <FontAwesomeIcon icon={faGithub} className="text-white text-[2rem] hover:text-gray-300 transition-colors" />
                   </Link>
-                  
+
                   <Link
                     href={`https://${(locale === "en") ? "" : `${locale}.`}fiverr.com/andresbonilla_1`}
                     target="_blank"
@@ -147,8 +146,8 @@ export default function Home() {
                   src={me}
                   alt={imagesALtsI18n("andresTesla")}
                   priority
-                  sizes="(min-width:1280px) 24rem, (min-width:1024px) 24rem, 20rem"
-                  className="w-[20rem] xl:w-[24rem] floating border-[1.5rem] border-white border-b-[4rem] mt-[5vh] lg:mt-[10vh]"
+                  sizes="(min-width:1280px) 24rem, (min-width:1024px) 24rem, 100vw"
+                  className="w-full max-w-[20rem] xl:max-w-[24rem] h-auto object-cover floating border-[1.2rem] sm:border-[1.5rem] border-white border-b-[3.5rem] sm:border-b-[4rem] mt-[5vh] lg:mt-[10vh]"
                 />
               </div>
             </div>
@@ -363,6 +362,9 @@ export default function Home() {
               success={contactI18n("success")}
               errorGlobal={contactI18n("error")}
             />
+            <div className="w-full bg-brown-500 text-center text-white text-opacity-90 text-lg pb-10">
+              <p>Made with ❤️ by Andres Bonilla</p>
+            </div>
           </section>
         </div>
 
