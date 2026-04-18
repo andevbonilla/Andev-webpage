@@ -14,7 +14,7 @@
   },
   "About": {
     "title": "À PROPOS DE MOI",
-    "text": "👋 Bonjour, je suis Andrés Bonilla. J’étudie actuellement l’administration des affaires, je suis entrepreneur, je développe des logiciels pour d’autres et je crée du contenu pour les réseaux sociaux sous le nom d’Andev Bonilla. À 13 ans, j’ai commencé à programmer par passion ; puis j’ai travaillé un temps comme freelance et, à 16 ans, j’ai fondé ma première entreprise technologique, Fansive. Depuis, j’ai réalisé de nombreux projets et je cherche toujours à apprendre davantage et à grandir tant personnellement que professionnellement."
+    "text": "👋 Bonjour, je suis Andrés Bonilla. J'étudie actuellement l'administration des affaires, je suis un entrepreneur, je développe des logiciels pour d'autres et je crée du contenu pour les réseaux sociaux sous le nom d'Andev Bonilla. À 13 ans, j'ai commencé à programmer comme passe-temps ; puis j'ai travaillé quelque temps comme freelance, et à 16 ans, j'ai fondé ma première entreprise technologique, Fansive. Depuis, j'ai réalisé de nombreux projets et même travaillé dans un entrepôt, tout en étudiant avec une bourse à l'Universidad de los Andes. Je m'efforce toujours d'en apprendre davantage et de grandir tant sur le plan personnel que professionnel."
   },
   "Business": {
     "title": "MES AFFAIRES",
@@ -30,8 +30,8 @@
     "3": "Altitude à laquelle les premiers ballons à air chaud ont atteint au XVIIIe siècle."
   },
   "UnaYMugre": {
-      "title": "Ongle et saleté",
-      "desc": "Ongle et saleté est un projet que j'ai créé avec mon ami Kevin où nous téléchargeons des vidéos amusantes et motivantes liées au monde du fitness. Voici quelques vidéos que nous avons faites."
+    "title": "Ongle et saleté",
+    "desc": "Ongle et saleté est un projet que j'ai créé avec mon ami Kevin où nous téléchargeons des vidéos amusantes et motivantes liées au monde du fitness. Voici quelques vidéos que nous avons faites."
   },
   "My-Projects": {
     "title": "MES PROJETS",
