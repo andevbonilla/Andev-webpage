@@ -47,7 +47,7 @@ import {
 } from "@/utils/IconsSvgs";
 
 // Assets (imports estáticos)
-import me from "@/assets/andresbonilla1.JPG";
+import me from "@/assets/andres-bonilla-imagen-de-perfil.webp";
 import spaceStation from "@/assets/space-station-icon.webp";
 
 const anton = Anton({
