@@ -42,6 +42,7 @@ export async function generateMetadata(
     alternates: {
       canonical: `${BASE_URL}/${locale}`,
       languages: {
+        'x-default': BASE_URL,
         es: `${BASE_URL}/es`,
         en: `${BASE_URL}/en`,
         fr: `${BASE_URL}/fr`,
@@ -91,9 +92,44 @@ export default async function LocaleLayout({
   params: { locale }
 }: LayoutProps) {
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  const BASE_URL = 'https://andevbonilla.com';
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Andrés Bonilla',
+    alternateName: 'Andev',
+    url: BASE_URL,
+    image: `${BASE_URL}/og/andev-web.jpg`,
+    logo: `${BASE_URL}/og/andev-web.jpg`,
+    sameAs: [
+      'https://github.com/andevbonilla',
+      'https://www.linkedin.com/in/andevbonilla',
+      'https://www.instagram.com/andevbonilla',
+      'https://www.tiktok.com/@mugre.fit'
+    ],
+    jobTitle: 'Software Developer & Entrepreneur',
+    description: t('description'),
+    knowsAbout: [
+      'Software Development',
+      'Web Development',
+      'Entrepreneurship',
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS'
+    ]
+  };
 
   return (
     <html lang={locale}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}

@@ -162,6 +162,14 @@ export const Navbar = ({
                             <Link href="/hi" className={`text-black flex items-center ${pathname.startsWith('/hi') ? 'bg-slate-300' : 'hover:bg-slate-300'} hover:transition-all px-1 py-3 rounded`}>
                                 <p className='ml-2 text-xl'>हिंदी</p>
                             </Link>
+
+                            <Link href="/pt" className={`text-black flex items-center ${pathname.startsWith('/pt') ? 'bg-slate-300' : 'hover:bg-slate-300'} hover:transition-all px-1 py-3 rounded`}>
+                                <p className='ml-2 text-xl'>Português</p>
+                            </Link>
+
+                            <Link href="/ru" className={`text-black flex items-center ${pathname.startsWith('/ru') ? 'bg-slate-300' : 'hover:bg-slate-300'} hover:transition-all px-1 py-3 rounded`}>
+                                <p className='ml-2 text-xl'>Русский</p>
+                            </Link>
                         </div>
 
                     </div>

@@ -144,7 +144,7 @@ export default function Home() {
               <div className="flex flex-col justify-center items-center w-[100%] lg:ml-[3rem] lg:w-auto lg:h-[100%]">
                 <Image
                   src={me}
-                  alt={imagesALtsI18n("andresTesla")}
+                  alt={imagesALtsI18n("andevbonilla-profile-picture")}
                   priority
                   sizes="(min-width:1280px) 24rem, (min-width:1024px) 24rem, 100vw"
                   className="w-full max-w-[20rem] xl:max-w-[24rem] h-auto object-cover floating border-[1.2rem] sm:border-[1.5rem] border-white border-b-[3.5rem] sm:border-b-[4rem] mt-[5vh] lg:mt-[10vh]"
