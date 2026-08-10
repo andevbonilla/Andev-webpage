@@ -57,6 +57,7 @@ const anton = Anton({
 });
 
 export default function Home() {
+  console.log("Hola mundo");
   const locale = useLocale();
   const imagesALtsI18n = useTranslations("Image-Alts");
   const curiosFactsI18n = useTranslations("Curios-Facts");
